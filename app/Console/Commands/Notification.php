@@ -48,7 +48,7 @@ class Notification extends Command
     function postToDiscord($message)
     {
         $data = array("content" => $message, "username" => "Enceladus");
-        $curl = curl_init("https://discordapp.com/api/webhooks/683471517845291020/VmDnHzO1Nqw1HHNrAavxXeS88eoG4RW7D-PIvx1ezaBb8UIIzdtOJzMFvXz3CmNBbvrw");
+        $curl = curl_init("nothing");
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
         curl_setopt($curl, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);

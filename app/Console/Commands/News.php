@@ -46,7 +46,7 @@ class News extends Command
             "content" => $response['articles'][0],
             "username" => "News"
         );
-        $curlDisc = curl_init("https://discordapp.com/api/webhooks/683563075429072937/isqdX8yn04IrH6bxRSo1jJJe_wyAZDnKwmec7LJSVBZSElewy7JagDrHHUG7VjkgJ1vv");
+        $curlDisc = curl_init("nothing");
         curl_setopt($curlDisc, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($curlDisc, CURLOPT_POSTFIELDS, json_encode($data));
         curl_setopt($curlDisc, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
